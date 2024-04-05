@@ -1,24 +1,102 @@
-# Compiled class file
+
+*.com
 *.class
+*.dll
+*.exe
+*.o
+*.so
 
-# Log file
-*.log
+# Packages #
+############
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+*.7z
+*.dmg
+*.gz
+*.iso
 *.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
 *.rar
+*.tar
+*.zip
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor directories and files #
+################################
+.idea
+*.swp
+*.swo
+*.sublime-workspace
+
+# Dependency directories #
+###########################
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory #
+################################
+.npm
+
+# Optional REPL history #
+#########################
+.node_repl_history
+
+# User-specific stuff #
+#######################
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results #
+#################
+build/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Private keys and configuration #
+##################################
+*.pem
+*.key
+*.cert
+*.env
+secrets/
+config/settings.*
+
+# Ignoring configuration files that may contain sensitive information
+*.yaml
+
+# Ignore all markdown files except README.md
+*.md
+!README.md
+
+
+db-secret.yaml
+aad-oidc-secret.yaml
+elastic-cloud-secret.yaml
+filebeat-svc-account.yaml
+k8s-hosted-elasticsearch.yaml
+ola-k8s-hosted-elasticsearch.yaml
+ola-openshift-cluster-logging.yaml
+
+# Ignore specific sensitive files/folders from the root directory
+/*.credentials
+/*.config
+
+# Ignore local development directories
+/.vscode/
+/.idea/
+
